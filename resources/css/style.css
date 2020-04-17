@@ -71,6 +71,7 @@ header {
     background-color: white;
     position: fixed;
     z-index: 5;
+    top: 0;
 }
   .logo {
       font-family: Manrope;
@@ -129,26 +130,33 @@ header {
   }
 
 .banner {
-    position: absolute;
+    position: relative;
     margin-top: 64px;
     background-color: #d9d9d9;
     width:100%;
     height: auto;
+    display: flex;
+    align-items: center;
 }
-.banner img {
+.bannerimg {
     width: 60%;
-    float: left;
     margin: 32px 48px 32px 24px;
 }
 
+.bannerimg img {
+    width: 100%;
+}
+.bannertext {
+    width: 40%;
+}
 .banner h1 {
     font-family: Manrope, "sans-serif";
     font-weight: 800;
     font-size: 2rem;
     color: #3d3d3d;
-    margin-top: 15%;
     letter-spacing: 0.1em;
     min-width: 95%;
+    position: right;
 }
 
 .banner p {
@@ -167,25 +175,28 @@ header {
     color: white;
     padding-top: 16px;
     padding-bottom: 16px;
-    width:28%;
+    margin-top: 5px;
+    width: 90%;
     background-color: #3d3d3d;
     border: none;
     transition: background-color 500ms ease-in;
+    
 }
 
 .banner button:hover {
     background-color: rgb(216, 182, 30);
 }
 
+
+
+.information { 
+    position: relative;
+    
+}
 video {
     width: 60%;
 }
 
-@media only screen and (max-width: 880px) {
-    .banner h1 {
-        margin-top: 5%;
-    }
-}
 
 @media only screen and (max-width: 710px) {
     
@@ -209,13 +220,19 @@ nav ul {
 nav li {
     margin-right: 45%;
 }
-.banner img {
-    float: none;
-    width: 100%;
+.banner {
+    flex-wrap: wrap;
+}
+.bannerimg{
+    min-width: 100%;
     margin: 0;
+}
+.bannertext {
+    min-width:100%;
 }
 .banner h1 {
     position: relative;
+    padding: 0;
     margin: 2rem 1rem 2rem 1rem;
 }
 .banner p {
@@ -227,4 +244,5 @@ nav li {
     margin: 2rem 1rem 2rem 1rem;
     justify-self: center;
 }
+
 }
