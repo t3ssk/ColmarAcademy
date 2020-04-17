@@ -70,6 +70,7 @@ header {
     height: 64px;
     background-color: white;
     position: fixed;
+    z-index: 5;
 }
   .logo {
       font-family: Manrope;
@@ -137,7 +138,53 @@ header {
 .banner img {
     width: 60%;
     float: left;
-    margin: 32px 24px 32px 24px;
+    margin: 32px 48px 32px 24px;
+}
+
+.banner h1 {
+    font-family: Manrope, "sans-serif";
+    font-weight: 800;
+    font-size: 2rem;
+    color: #3d3d3d;
+    margin-top: 15%;
+    letter-spacing: 0.1em;
+    min-width: 95%;
+}
+
+.banner p {
+    font-family: Manrope, "sans-serif";
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    color: #3d3d3d;
+    width:95%;
+}
+
+.banner button {
+    font-family: Manrope, "sans-serif";
+    font-weight: 400;
+    font-size: 1rem;
+    letter-spacing: 0.1em;
+    color: white;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    width:28%;
+    background-color: #3d3d3d;
+    border: none;
+    transition: background-color 500ms ease-in;
+}
+
+.banner button:hover {
+    background-color: rgb(216, 182, 30);
+}
+
+video {
+    width: 60%;
+}
+
+@media only screen and (max-width: 880px) {
+    .banner h1 {
+        margin-top: 5%;
+    }
 }
 
 @media only screen and (max-width: 710px) {
@@ -162,9 +209,22 @@ nav ul {
 nav li {
     margin-right: 45%;
 }
-
+.banner img {
+    float: none;
+    width: 100%;
+    margin: 0;
 }
-
-video {
-    width: 60%;
+.banner h1 {
+    position: relative;
+    margin: 2rem 1rem 2rem 1rem;
+}
+.banner p {
+    margin-left: 1rem;
+}
+.banner button {
+    width: 92%;
+    background-color: rgb(114, 114, 114);
+    margin: 2rem 1rem 2rem 1rem;
+    justify-self: center;
+}
 }
