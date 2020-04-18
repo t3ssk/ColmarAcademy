@@ -38,11 +38,11 @@
             <div class="bannertext">
              <h1>Learn something new everyday</h1>
              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-             <button type="button">Start here.</button>
+             <button type="button" onclick="window.location.href = '#';"> Start here.</button>
             </div>
         </section>
         <section class="information">
-            <div class = "mainInfo">
+            <div class = "mainInfo" id="desktop">
                <img src="resources/images/information-main.jpg" alt="černoušek čte knihu">
                <h2>It doesn't hurt to keep practicing</h2>
                <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.</p>
@@ -50,29 +50,41 @@
             </div>
             <div class="otherInfo">
                 <div class="orientation">
-                    <img src="resources/images/information-orientation.jpg" id="desktop">
-                    <img src="resources/images/information-orientation-mobile.jpg" id="mobile">
-                    <h3>Orientation date</h3>
-                    <p>Tue 10/11 & Wed 10/12: 8am - 3pm</p>
-                    <a href="#">Read more</a>
+                    <div class="orientationimg">
+                        <img src="resources/images/information-orientation.jpg" id="desktop">
+                        <img src="resources/images/information-orientation-mobile.jpg" id="mobile">
+                    </div>
+                    <div class="orientationtext">
+                     <h3>Orientation date</h3>
+                     <p>Tue 10/11 & Wed 10/12: 8am - 3pm</p>
+                     <a href="#">Read more</a>
+                    </div>
                 </div>
                 <div class="ourcampus">
-                    <img src="resources/images/information-campus.jpg" id="desktop">
-                    <img src="resources/images/information-campus-mobile.jpg" id="mobile">
-                    <h3>Our campus</h3>
-                    <p>Find which campus is close to you</p>
-                    <a href="#">Read more</a>
+                    <div class="ourcampusimg">
+                      <img src="resources/images/information-campus.jpg" id="desktop">
+                      <img src="resources/images/information-campus-mobile.jpg" id="mobile">
+                    </div>
+                    <div class="ourcampustext">
+                      <h3>Our campus</h3>
+                      <p>Find which campus is close to you</p>
+                     <a href="#">Read more</a>
+                    </div>
                 </div>
                 <div class="guestlecture">
-                    <img src="resources/images/information-guest-lecture.jpg" id="desktop">
-                    <img src="resources/images/information-guest-lecture-mobile.jpg" id="mobile">
-                    <h3>Our guest lecture</h3>
-                    <p>Join a keynote with Oliver Snack about music in medical treatment</p>
-                    <a href="#">Read more</a>
+                    <div class="guestlectureimg">
+                      <img src="resources/images/information-guest-lecture.jpg" id="desktop">
+                      <img src="resources/images/information-guest-lecture-mobile.jpg" id="mobile">
+                    </div>
+                    <div class="guestlecturetext">
+                      <h3>Our guest lecture</h3>
+                      <p>Join a keynote with Oliver Snack about music in medical treatment</p>
+                      <a href="#">Read more</a>
+                    </div>
                 </div>
             </div>
         </section>
-        <section class="Startlearning" id="desktop">
+        <section class="startlearning" id="desktop">
             <div class="course">
                 <img src="resources/images/course-software.jpg">
                 <h4>Software engineering</h4>

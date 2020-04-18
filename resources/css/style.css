@@ -132,7 +132,7 @@ header {
 .banner {
     position: relative;
     margin-top: 64px;
-    background-color: #d9d9d9;
+    background-color: #f3f0f0;
     width:100%;
     height: auto;
     display: flex;
@@ -191,8 +191,123 @@ header {
 
 .information { 
     position: relative;
-    
+    width: 100%;
+    display: flex;
 }
+
+.mainInfo{
+    width: 60%;
+    margin: 32px 48px 32px 24px;
+}
+.mainInfo img {
+    width: 100%;
+    height: auto;
+
+}
+
+.mainInfo h2 {
+    font-family: Manrope;
+    font-weight: 800;
+    font-size: 1.5rem;
+    color: #4d4d4d;
+    letter-spacing: 0.1rem;
+}
+
+.mainInfo p {
+    font-family: Verdana;
+    font-weight: 100;
+    font-size: 13px;
+    letter-spacing: 0.1rem;
+    text-align: justify;
+    color: #666666;
+    padding-bottom: 2rem;
+}
+
+.mainInfo a {
+    font-family: Verdana;
+    font-weight: 100;
+    font-size: 11px;
+    letter-spacing: 0.1rem;
+    text-decoration: none;
+    color:black;
+
+}
+
+.otherInfo {
+    width: 40%;
+    border-left: 1px solid #d8d8d8;
+}
+
+.otherInfo h3 {
+    font-family: Manrope;
+    font-weight: 800;
+    font-size: 1.1rem;
+    letter-spacing: 0.1rem;
+    color: #666666;
+
+}
+
+.otherInfo p{
+    font-family: Verdana;
+    font-weight: 100;
+    font-size: 12px;
+    letter-spacing: 0.1rem;
+    text-align: justify;
+    color: #666666;
+}
+
+.otherInfo a {
+    font-family: Verdana;
+    font-weight: 100;
+    font-size: 11px;
+    letter-spacing: 0.1rem;
+    text-decoration: none;
+    color: #3d98ff;
+}
+
+.orientation {
+    margin-top: 16px;
+    align-items: center;
+    display: flex;
+    border-bottom: 1px solid #d8d8d8;
+}
+
+.ourcampus {
+    align-items: center;
+    display: flex;
+    border-top: 1px solid #d8d8d8;
+    border-bottom: 1px solid #d8d8d8;
+}
+
+.guestlecture {
+    align-items: center;
+    display: flex;
+    border-top: 1px solid #d8d8d8;
+    border-bottom: 1px solid #d8d8d8;
+}
+
+.orientationimg, .ourcampusimg, .guestlectureimg {
+    width: 35%;
+    margin: 16px;
+}
+
+.orientationimg img, .ourcampusimg img, .guestlectureimg img {
+    width: 100%;
+    height: auto;
+}
+.orientationtext, .ourcampustext, .guestlecturetext {
+    width: 65%;
+    margin: 16px;
+}
+.orientation, .ourcampus, .guestlecture {
+    background-color: white;
+    transition: background-color 500ms ease-in;
+}
+.orientation:hover, .ourcampus:hover, .guestlecture:hover {
+    background-color: #f3f0f0;
+}
+
+
 video {
     width: 60%;
 }
@@ -243,6 +358,23 @@ nav li {
     background-color: rgb(114, 114, 114);
     margin: 2rem 1rem 2rem 1rem;
     justify-self: center;
+}
+
+.otherInfo {
+    width: 100%;
+    border: 0px;
+}
+.orientation, .ourcampus, .guestlecture {
+    display: block;
+    padding-bottom: 2rem;
+    border: 0px ;
+}
+.orientationimg, .ourcampusimg, .guestlectureimg {
+    width: auto;
+}
+.orientationtext, .ourcampustext, .guestlecturetext {
+    margin: 1rem 1rem 1rem 1rem;
+    width: 100%;
 }
 
 }
