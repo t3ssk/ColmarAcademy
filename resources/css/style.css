@@ -124,6 +124,12 @@ header {
     text-transform: uppercase;
     text-decoration: none;
     color: dimgray;
+    font-weight: 100;
+    transition: font-weight 320ms ease-in;
+  }
+  nav li a:hover {
+      font-weight: 400;
+
   }
 .mobile, #mobile {
       display: none;
