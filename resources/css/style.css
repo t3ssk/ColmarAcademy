@@ -301,10 +301,12 @@ header {
     width: 100%;
     height: auto;
 }
-.orientationtext, .ourcampustext, .guestlecturetext {
-    max-width: 65%;
+.orientationtext, .ourcampustext, .guestlecturetext{
+    width: 65%;
     margin: 16px;
 }
+
+
 .orientation, .ourcampus, .guestlecture {
     background-color: white;
     transition: background-color 500ms ease-in;
@@ -597,5 +599,10 @@ nav li {
 footer .copyright {
     width: 100%;
     text-align: left;
+}
+
+.orientationtext, .ourcampustext, .guestlecturetext {
+    max-width: 60%;
+    margin: 16px;
 }
 }
