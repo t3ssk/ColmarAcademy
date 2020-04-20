@@ -312,8 +312,67 @@ header {
 .orientation:hover, .ourcampus:hover, .guestlecture:hover {
     background-color: #f3f0f0;
 }
+.startlearning {
+    background-color: #faf9f9;
+}
 
+.startnadpis {
+    padding: 32px;
+    text-align: center;
+    font-family: Manrope;
+    font-weight: 800;
+    font-size: 1.5rem;
+    color: #4d4d4d;
+    letter-spacing: 0.1rem;
+}
+.kurzy {
+    display: flex;
+    max-width: 100%;
+    flex-wrap: wrap;
+    justify-items: center;
+    padding-left: 72px;
+    padding-right: 72px;
+    justify-content: space-evenly;
+}
+.course {
+    max-width: 30%;
+    margin-left: 32px;
+    margin-bottom: 32px;
+    background-color: white;
+    flex-shrink: 1;
+    padding-bottom: 24px;
+}
 
+.course img {
+    width:100%;
+}
+
+.course h4 {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 16px;
+    font-family: Manrope;
+    font-weight: 800;
+    font-size: 1.1rem;
+    letter-spacing: 0.1rem;
+    color: #666666;
+}
+
+.course p {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 8px;
+    font-family: Verdana;
+    font-weight: 100;
+    font-size: 12px;
+    letter-spacing: 0.1rem;
+    text-align: justify;
+    color: #666666;
+}
+.cousees {
+    text-transform: uppercase;
+    color: black;
+}
 video {
     width: 60%;
 }
@@ -382,5 +441,37 @@ nav li {
     margin: 1rem 1rem 1rem 1rem;
     width: 100%;
 }
-
+.startlearning {
+    background-color: #faf9f9;
+    border-top: 1px solid #eeecec;
+    border-left: 1px solid #eeecec;
+    border-right: 1px solid #eeecec;
+}
+.Startlearningmobile {
+    background-color: #faf9f9;
+    padding-bottom: 32px;
+    border-bottom: 1px solid #eeecec;
+    border-left: 1px solid #eeecec;
+    border-right: 1px solid #eeecec;
+}
+.Startlearningmobile button {
+    width: 80%;
+    text-align: left;
+    margin: auto;
+    display: block;
+    padding: 16px 16px 24px 16px; 
+    background-color: #d4d3d3;
+    border-radius: 0;
+    border: 0;
+    font-family: Manrope;
+    font-weight: 800;
+    font-size: 1.1rem;
+    letter-spacing: 0.1rem;
+    color: #464545;
+    margin-bottom: 8px;
+    transition: background-color 1s ease-in;
+}
+.Startlearningmobile button:hover {
+    background-color: rgb(216, 182, 30); 
+}
 }
