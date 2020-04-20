@@ -302,7 +302,7 @@ header {
     height: auto;
 }
 .orientationtext, .ourcampustext, .guestlecturetext {
-    width: 65%;
+    max-width: 65%;
     margin: 16px;
 }
 .orientation, .ourcampus, .guestlecture {
@@ -373,11 +373,109 @@ header {
     text-transform: uppercase;
     color: black;
 }
-video {
-    width: 60%;
+
+.thesisnadpis {
+    padding: 32px;
+    text-align: center;
+    font-family: Manrope;
+    font-weight: 800;
+    font-size: 1.5rem;
+    color: #4d4d4d;
+    letter-spacing: 0.1rem;
+}
+.teze {
+    display: flex;
+    
 }
 
+.teze h4 {
+    font-family: Manrope;
+    font-weight: 800;
+    font-size: 1.1rem;
+    letter-spacing: 0.1rem;
+    color: #666666;
+}
 
+.teze p {
+    font-family: Verdana;
+    font-weight: 100;
+    font-size: 12px;
+    letter-spacing: 0.1rem;
+    text-align: justify;
+    color: #666666;
+    margin-right: 24px;
+}
+.video {
+    width: 60%;
+    margin: 0px 24px 0px 24px;
+    padding-bottom: 32px;
+}
+.video video {
+    width: 100%;
+}
+.theses {
+    max-width: 40%;
+    display: flex;
+    flex-direction: column;
+
+    
+}
+
+.thesissmall {
+    margin-top: 16px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #d4d3d3;
+    background-color: white;
+    transition: background-color 500ms ease-in;
+}
+.thesissmall:hover {
+    background-color: #d4d3d3;
+}
+.thesissmallimg {
+    width: 35%;    
+    margin: 16px;
+}
+.thesissmalltext {
+    width: 65%;
+    margin-left: 16px;
+}
+.thesissmallimg img{
+    width: 100%;
+    height: auto;
+    align-self: center;
+}
+
+footer {
+    max-width: 100%;
+    border-top: 1px solid #d8d8d8;
+    font-family: Verdana;
+    font-weight: 100;
+    font-size: 10px;
+    letter-spacing: 0.1rem;
+    text-align: justify;
+    color: #666666;
+    padding: 16px 32px 16px 24px;
+    display: flex;
+    justify-content: space-between;
+}
+footer .copyright {
+    width: 60%;
+    text-align: left;
+}
+footer .termspriv {
+    width: 40%;
+    text-align: right;
+}
+footer ul li{
+    padding-left: 16px;
+    display: inline;
+}
+footer ul li a{
+    text-decoration: none;
+    color: #474747;
+}
 @media only screen and (max-width: 710px) {
     
    .desktop, #desktop {
@@ -441,12 +539,16 @@ nav li {
     margin: 1rem 1rem 1rem 1rem;
     width: 100%;
 }
+
 .startlearning {
     background-color: #faf9f9;
     border-top: 1px solid #eeecec;
     border-left: 1px solid #eeecec;
     border-right: 1px solid #eeecec;
 }
+.startnadpis {
+    padding: 16px;
+} 
 .Startlearningmobile {
     background-color: #faf9f9;
     padding-bottom: 32px;
@@ -473,5 +575,27 @@ nav li {
 }
 .Startlearningmobile button:hover {
     background-color: rgb(216, 182, 30); 
+}
+
+.thesisnadpis {
+    padding: 0px;
+}
+
+
+.video{
+    margin:0;
+    padding:0;
+    width: 100%;
+}
+
+.video figure {
+    margin:0;
+    padding: 0; 
+    max-width:100%; 
+}
+
+footer .copyright {
+    width: 100%;
+    text-align: left;
 }
 }
